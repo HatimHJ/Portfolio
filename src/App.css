@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+
+:root {
+  --color-dark-purple: #3b163d;
+  --color-light-purple: #c77dff;
+  --color-purple: #4D1F4F;
+  --color-white: #e0e0e0;
+  --color-yellow: rgb(255, 183, 3);
+}
+
+.img-container{
+  overflow: hidden;
+  
+}
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+  
+  
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  font-family: 'Xanh Mono', monospace;
+}
+
+ul{
+  list-style: none;
+}
+
+
+.contant{
+  background-color: #f5f6fa;
+}
+
+.container{
+  width: 90%;
+  margin: auto;
+}
+
+.linkStyle{
+  display: block;
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.linkStyle:hover{
+  color: var(--color-yellow)
+}

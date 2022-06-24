@@ -1,0 +1,12 @@
+
+
+@media (max-width:768px) {
+  .profile_skills .profile , 
+  .profile_skills .skills {
+      width: 100%;
+      float: none
+  }
+  .profile_skills .profile {
+      margin-bottom: 20px
+  }
+}

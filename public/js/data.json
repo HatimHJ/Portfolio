@@ -1,0 +1,147 @@
+{
+    "works": [
+        {
+            "id": 1,
+            "icon_name": "icon fa fa-chain fa-2x",
+            "icon_style": {
+                "marginBottom":"20px",
+                "color": "var(--color-yellow)"
+            },
+            "title": "Mobile Ux",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+        },
+        {
+            "id": 2,
+            "icon_name": "icon fa fa-bolt fa-2x",
+            "icon_style": {                
+                "color": "var(--color-yellow)",
+                "marginBottom":"20px"
+            },
+            "title": "Mobile Ux",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+        },
+        {
+            "id": 3,
+            "icon_name": "icon fa fa-tachometer fa-2x",
+            "icon_style": {                
+                "color": "var(--color-yellow)",
+                "marginBottom":"20px"
+            },
+            "title": "Mobile Ux",
+            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+        }
+    ],
+
+    "portfolio": [
+        {
+            "id": 1,
+            "image": "/images/portfolio/portfolio-img1.jpg",
+            "category": "html"
+        },
+        {
+            "id": 2,
+            "image": "/images/portfolio/portfolio-img2.jpg",
+            "category": "html"
+        },
+        {
+            "id": 3,
+            "image": "/images/portfolio/portfolio-img3.jpg",
+            "category": "css"
+        },
+        {
+            "id": 4,
+            "image": "/images/portfolio/portfolio-img4.jpg",
+            "category": "css"
+        },
+        {
+            "id": 5,
+            "image": "/images/portfolio/portfolio-img5.jpg",
+            "category": "wordpress"
+        },
+        {
+            "id": 6,
+            "image": "/images/portfolio/portfolio-img6.jpg",
+            "category": "wordpress"
+        },
+        {
+            "id": 7,
+            "image": "/images/portfolio/portfolio-img4.jpg",
+            "category": "mobile"
+        },
+        {
+            "id": 8,
+            "image": "/images/portfolio/portfolio-img8.jpg",
+            "category": "mobile"
+        }
+    ],
+
+    "social": [
+        {
+            "id": 1,
+            "icon": "icon fa fa-facebook fa-lg",
+            "title": "Follow Me on",
+            "body": "Social Facebook"
+        },
+        {
+            "id": 2,
+            "icon": "icon fa fa-twitter fa-lg",
+            "title": "Tweet Me on",
+            "body": "Social twitter"
+        },
+        {
+            "id": 3,
+            "icon": "icon fa fa-pinterest fa-lg",
+            "title": "Pin Me on",
+            "body": "Social Pinterest"
+        }
+    ],
+    
+    "profile": {
+        "skill" :[
+        {
+            "id" : "1",
+            "title" : "Bootstrap",
+            "percent" : "40%"
+        },
+        {
+            "id" : "2",
+            "title" : "Wordpress",
+            "percent" : "50%"
+        },
+        {
+            "id" : "3",
+            "title" : "ReactJS",
+            "percent" : "20%"
+        }
+        ],
+        "contact":[
+            {
+                "field" : "Name",
+                "value" : "Hatim h."
+            },
+            {
+                "field" : "Birthday",
+                "value" : "18-12-1990"
+            },
+            {
+                "field" : "Address",
+                "value" : "Earth"
+            },
+            {
+                "field" : "Phone",
+                "value" : "+966545409394"
+            },
+            {
+                "field" : "Email",
+                "value" : "Hatimaljewlwi@gmail.com"
+            },
+            {
+                "field" : "Website",
+                "value" : "google.com"
+            }
+        ]
+    }
+
+    
+
+}
