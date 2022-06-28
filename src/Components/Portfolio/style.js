@@ -44,15 +44,21 @@ export const PortfolioCard = styled.div`
   float: left;
   font-size: 0;
   position: relative;
+  @media (max-width:1222px) {
+    width:33.33%
+  }
+  @media (max-width:992px) {
+    width:50%
+  }
+  @media (max-width:768px) {
+    width:100%
+  }
   
   &:hover .overlay{
     opacity:1;
     transition: .5s;
   }
-  &:hover img{
-    transform: scale(1.1);
-    transition: .5s;
-  }
+  
 
   img{
     width: 100%;

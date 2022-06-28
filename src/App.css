@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root {
   --color-dark-purple: #3b163d;
@@ -6,17 +6,35 @@
   --color-purple: #4D1F4F;
   --color-white: #e0e0e0;
   --color-yellow: rgb(255, 183, 3);
+  font-size: 16px;
+}
+
+.lang-switcher{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0.25rem;
+  cursor: pointer;
+  background: #7d6506;
+  color: #fff;
+  border: none;
+  font-size: .95rem;
+  border-bottom-right-radius: 10px;
 }
 
 .img-container{
   overflow: hidden;
-  
+  width: 300px;height: 170px;
+  border: 3px solid var(--color-light-purple);
+  margin-bottom: 5px;
+  border-radius: 10px;  
 }
+
+
 :root {
   --card-height: 65vh;
-  --card-width: calc(var(--card-height) / 1.5);
-  
-  
+  --card-width: calc(var(--card-height) / 1.5);  
 }
 
 
@@ -28,7 +46,7 @@
 }
 
 body{
-  font-family: 'Xanh Mono', monospace;
+  font-family: 'Nunito', sans-serif;
 }
 
 ul{
@@ -55,3 +73,9 @@ ul{
 .linkStyle:hover{
   color: var(--color-yellow)
 }
+
+
+.arabic{
+  /* font-size:.7rem; */
+}
+

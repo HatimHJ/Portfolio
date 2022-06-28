@@ -6,10 +6,11 @@ export const NavbarContainer = styled.div`
   background: var(--color-purple);
   position: relative;
   border-bottom: 1px solid var(--color-yellow);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 `
 
 export const Logo = styled.div`
-    width: 50%;
+    width: 30%;
     float: left; 
 
     @media (max-width : 991px) {    
@@ -26,8 +27,8 @@ export const LogoText = styled.h2`
 `
 
 export const Ul = styled.ul`
-    width: 50%;
-    float: left;
+    width: 70%;
+    float: right;
     list-style: none;
     
     @media (max-width : 991px) {    

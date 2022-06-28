@@ -1,0 +1,45 @@
+/* modal */
+.modal-backdrop{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;left: 0;
+  background-color: #3b163dc2;
+  z-index: 10;
+}
+.modal{
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c77dff;
+  color: #3b163d;
+  padding: 1rem;
+  border: 2px solid var(--color-yellow);
+  font-size: 16px;
+  width: 80%;
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.image-container, .text{
+  width: 40vw;
+}
+
+.modal span.close{
+  position: absolute;
+  top: -20px;
+  right: -3px;
+  background: #f00;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}

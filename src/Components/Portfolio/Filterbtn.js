@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 import { PortfolioListItem } from './style'
 
-const Filterbtn = ({cklickHandler, x}) => {
-  const filters = ['all', 'html', 'css', 'wordpress', 'mobile']
+const Filterbtn = ({cklickHandler, active}) => {
+  const filters = ['all', 'js', 'css', 'wordpress', 'react']
   return (
     <>
       {
         filters.map((filter,index) => {
-          const a = (filter === x) && true
-          return <PortfolioListItem active={a} onClick={() =>cklickHandler(filter)} key={index}>{filter}</PortfolioListItem>
+          const activeLink = (filter === active) && true
+          return <PortfolioListItem active={activeLink} onClick={() =>cklickHandler(filter)} key={index}>{filter}</PortfolioListItem>
         })
       }
     </>

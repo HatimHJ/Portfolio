@@ -4,13 +4,15 @@ import { ProfileContainer, ProfileSectionTitle } from "./style.js"
 import {ProfileSection, ProfileList, ProfileListItem } from "./style.js"
 import { SkillsSection, SkillsDesc, SkillsBar, SkillsParent } from "./style.js"
 import useFetch from "../../customHooks/useFetch"
+import { titles} from "../../titlesData"
 
 
-const Profile = () => {
+const Profile = ({isArabic}) => {
   const [contact, setContact] = useState([])
   const [skills, setSkills] = useState([])
   const {state, flag} = useFetch('profile')
-
+  const {profileTitle, skillsText} = titles
+  
   useEffect(() => {    
     if (flag) {
       setContact(state.contact)
@@ -22,14 +24,14 @@ const Profile = () => {
     <ProfileContainer>
       <div className="container">
         <ProfileSection>
-          <ProfileSectionTitle><span>My </span>Profile</ProfileSectionTitle>
+          <ProfileSectionTitle>{isArabic ? profileTitle.AR : profileTitle.EN}</ProfileSectionTitle>
           <ProfileList>
             {
               flag && contact.map((item, index) => {
                 return (
                   <ProfileListItem key={index}>
-                    <span>{item.field}</span>
-                    {item.value}
+                    <span>{isArabic ? item.fieldAR : item.field}</span>
+                    {isArabic ? item.valueAR ? item.valueAR : item.value : item.value}
                   </ProfileListItem>
                 )
               })
@@ -40,9 +42,9 @@ const Profile = () => {
         </ProfileSection>
         
         <SkillsSection>
-          <ProfileSectionTitle>Some <span>skills</span></ProfileSectionTitle>
+          <ProfileSectionTitle>{isArabic ? skillsText.AR : skillsText.EN}</ProfileSectionTitle>
           <SkillsDesc>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos praesentium blanditiis esse cupiditate, omnis similique.
+          {isArabic ? skillsText.descAR : skillsText.descEN}
           </SkillsDesc>
           { flag && skills.map(skill =>{
               return (

@@ -3,18 +3,21 @@ import CardContent from './CardContent'
 import Filterbtn from './Filterbtn'
 import { PortfolioContainer, PortfolioTitle, PortfolioList, PortfolioCard } from "./style"
 import useFetch from "../../customHooks/useFetch"
+import { titles} from "../../titlesData"
 
-const Portfolio = () => {
+const Portfolio = ({isArabic}) => {
   const [portfolios, setPortfolios] = useState([])
   const [filterdList, setFilterdList] = useState([])
   const [active, setActive] = useState('all')
   const  {state, flag} = useFetch('portfolio')
+  const {portfolioTitle} = titles
 
   React.useEffect(()=> {
     if (flag) {
-      setPortfolios(state)
+      setPortfolios(state)      
     }
   }, [flag])
+
 
   const cklickHandler = (category) => {
     setActive(category)
@@ -28,10 +31,10 @@ const Portfolio = () => {
   return (
   
     <PortfolioContainer>
-        <PortfolioTitle><span>My</span> Portfolio</PortfolioTitle>
+        <PortfolioTitle>{isArabic ? portfolioTitle.AR : portfolioTitle.EN}</PortfolioTitle>
         <PortfolioList>
           
-          <Filterbtn x={active} cklickHandler={cklickHandler} />
+          <Filterbtn active={active} cklickHandler={cklickHandler} />
 
         </PortfolioList>
           <div className="box">            
@@ -39,13 +42,13 @@ const Portfolio = () => {
               filterdList.length > 1 ? filterdList.map(portfolio => {
                 return (                
                   <PortfolioCard key={portfolio.id}>
-                    <CardContent img={portfolio.image} />
+                    <CardContent img={portfolio.image} id={portfolio.id}   />
                   </PortfolioCard>
                 )
               }):portfolios.map(portfolio => {
                 return (                
                   <PortfolioCard key={portfolio.id}>
-                    <CardContent img={portfolio.image} />
+                    <CardContent img={portfolio.image} id={portfolio.id} />
                   </PortfolioCard>
                 )
               })

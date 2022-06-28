@@ -2,76 +2,90 @@
     "works": [
         {
             "id": 1,
-            "icon_name": "icon fa fa-chain fa-2x",
+            "icon_name": "icon fab fa-wordpress fa-2x",
             "icon_style": {
                 "marginBottom":"20px",
                 "color": "var(--color-yellow)"
             },
-            "title": "Mobile Ux",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+            "text":{
+                "title": "Wordpress",
+                "body": "WordPress is a core analogy designed to clarify the functions of WordPress: it stores content and enables a user to create and publish webpages, requiring only a domain and a hosting.",
+                "titleAR": "ووردبريس",
+                "bodyAR": "ووردبريس هو نظام إدارة محتوى إلكتروني مفتوح المصدر، مبنيّ بلغة بي إتش بي وقواعد بيانات ماي إس كيو إل، تُوزّعه شركة أوتوماتيك تحت رخصة جنو العمومية الإصدار رقم 2 أو أعلى؛ ويساهم في تطويره مجموعة من المطورين المتطوعين.."
+            }
         },
         {
             "id": 2,
-            "icon_name": "icon fa fa-bolt fa-2x",
+            "icon_name": "icon fab fa-css3 fa-2x",
             "icon_style": {                
                 "color": "var(--color-yellow)",
                 "marginBottom":"20px"
             },
-            "title": "Mobile Ux",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+            "text":{
+                "title": "CSS",
+                "body": "Cascading Style Sheets (CSS) is a language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).",
+                "titleAR": "سي إس إس",
+                "bodyAR": "هذه التقنية تعنى بالمظهر الكلي لصفحات مواقع الويب من ألوان وصور وغيره. ويمكن إضافته للصفحة بعدة طرق أفضلها التضمين الخارجي بكتابة شفرة السي إس إس في ملف منفصل."
+            }
+            
         },
         {
             "id": 3,
-            "icon_name": "icon fa fa-tachometer fa-2x",
+            "icon_name": "icon fab fa-react fa-2x",
             "icon_style": {                
                 "color": "var(--color-yellow)",
                 "marginBottom":"20px"
             },
-            "title": "Mobile Ux",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quos omnis voluptas ea ipsam! Voluptas."
+            "text":{
+                "title": "React",
+                "body": "React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained mainly by  Facebook",
+                "titleAR": "رياكت",
+                "bodyAR": "رياكت ، مكتبة برمجية مبنية بلغة جافا سكربت، مفتوحة المصدر مُتخصصة بواجهات المستخدم  تم بناؤها من قبل شركة ميتا المعروفة سابقًا بفيسبوك"
+            }
+            
         }
     ],
 
     "portfolio": [
         {
             "id": 1,
-            "image": "/images/portfolio/portfolio-img1.jpg",
-            "category": "html"
+            "image": "/images/portfolio/js01.png",
+            "category": "js"
         },
         {
             "id": 2,
-            "image": "/images/portfolio/portfolio-img2.jpg",
-            "category": "html"
+            "image": "/images/portfolio/js02.png",
+            "category": "js"
         },
         {
             "id": 3,
-            "image": "/images/portfolio/portfolio-img3.jpg",
+            "image": "/images/portfolio/css03.png",
             "category": "css"
         },
         {
             "id": 4,
-            "image": "/images/portfolio/portfolio-img4.jpg",
+            "image": "/images/portfolio/css02.png",
             "category": "css"
         },
         {
             "id": 5,
-            "image": "/images/portfolio/portfolio-img5.jpg",
+            "image": "/images/portfolio/wp01.png",
             "category": "wordpress"
         },
         {
             "id": 6,
-            "image": "/images/portfolio/portfolio-img6.jpg",
+            "image": "/images/portfolio/wp02.png",
             "category": "wordpress"
         },
         {
             "id": 7,
-            "image": "/images/portfolio/portfolio-img4.jpg",
-            "category": "mobile"
+            "image": "/images/portfolio/react01.png",
+            "category": "react"
         },
         {
             "id": 8,
-            "image": "/images/portfolio/portfolio-img8.jpg",
-            "category": "mobile"
+            "image": "/images/portfolio/react02.png",
+            "category": "react"
         }
     ],
 
@@ -100,44 +114,53 @@
         "skill" :[
         {
             "id" : "1",
-            "title" : "Bootstrap",
-            "percent" : "40%"
+            "title" : "css",
+            "percent" : "70%"
         },
         {
             "id" : "2",
             "title" : "Wordpress",
-            "percent" : "50%"
+            "percent" : "60%"
         },
         {
             "id" : "3",
             "title" : "ReactJS",
-            "percent" : "20%"
+            "percent" : "40%"
         }
         ],
         "contact":[
             {
                 "field" : "Name",
-                "value" : "Hatim h."
+                "fieldAR" : "الاســم",
+                "value" : "Hatim h.",
+                "valueAR" : "حاتم ح"
             },
             {
                 "field" : "Birthday",
-                "value" : "18-12-1990"
+                "fieldAR" : "تاريخ الميلاد",
+                "value" : "18-12-1990",
+                "valueAR" : "30-05-1411"
             },
             {
                 "field" : "Address",
-                "value" : "Earth"
+                "fieldAR" : "العنوان",
+                "value" : "SA",
+                "valueAR" : "السعودية"
             },
             {
                 "field" : "Phone",
+                "fieldAR" : "الهاتف",
                 "value" : "+966545409394"
             },
             {
                 "field" : "Email",
+                "fieldAR" : "البريد ",
                 "value" : "Hatimaljewlwi@gmail.com"
             },
             {
                 "field" : "Website",
-                "value" : "google.com"
+                "fieldAR" : "الموقع",
+                "value" : "hatimh.netlify.app"
             }
         ]
     }

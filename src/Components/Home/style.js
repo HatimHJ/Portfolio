@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom";
 
 export const HomeContainer = styled.div`
   height: 500px;
@@ -24,9 +25,22 @@ export const HomeInfo = styled.div`
 export const HomeTitle = styled.h2`
   font-size: 60px;
   font-weight: bold;
-  color: var(--color-purple);
+  color: var(--color-yellow);
   margin-bottom: 20px;
-
+  animation: blink 3s ease  infinite ;
+  @keyframes blink {
+    0%{
+      text-shadow: 0px 0px 2px var(--color-purple);
+    }
+    
+    50%{
+      text-shadow: 0px 0px 5px var(--color-purple);
+    }
+    
+    100%{
+      text-shadow: 0px 0px 2px var(--color-purple);
+    }
+  }
   @media (max-width:768px) {    
         font-size: 40px;
         color: #fff
@@ -49,7 +63,7 @@ export const HomeDesc = styled.p`
   font-size: 20px;
   line-height: 1.5;
   color: #888;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   span {
     background-color:var(--color-yellow);
@@ -64,19 +78,21 @@ export const HomeDesc = styled.p`
 
 `
 
-export const HomeBtn = styled.button`
+export const HomeBtn = styled(Link)`
   border: solid 2px var(--color-purple);
   color : var(--color-yellow);
+  font-weight:bold;
   outline: 0;
   padding: 1rem 2rem;
   font-size: 1.3rem;
-  letter-spacing: .08rem;
   background-color: var(--color-purple);
   position: relative;
   cursor: pointer;
+  text-decoration: none;
 
   &::after {
     content: '';
+    
     position: absolute;
     width: 100%;
     height: 100%;
@@ -94,6 +110,7 @@ export const HomeBtn = styled.button`
     color: var(--color-purple);
     transition: all .5s ease-in-out;
     &::after {
+      
       top: -8px;
       left: -8px;
       width: calc(100% + 16px );
@@ -104,5 +121,5 @@ export const HomeBtn = styled.button`
       border-bottom-right-radius: 10px;
     }
   }
-
+  
 `

@@ -1,19 +1,34 @@
 import React from 'react'
-import {HomeContainer, HomeInfo, HomeTitle, HomeSubTitle, HomeDesc,  HomeBtn} from "./style"
+import {HomeContainer, HomeInfo, HomeTitle, HomeDesc,  HomeBtn} from "./style"
 
-const Home = () => {
+const data = 
+  {
+    EN:{
+      "title":"Hatim H.",
+      "desc":`Iam a Front-End Developer and Wordpress Designer  
+              creating modern and resposive designs to Web.`,
+      "contact":"contact me"
+    },
+    AR:{
+      "title":"حــاتم ح.",
+      "desc":`أنا  مطور للواجهة الأمامية  ومصمم ووردبريس أصمم تصميمات حديثة ومتجاوبة للويب.`,
+      "contact":"اتصــل بي"
+    }
+  }
+
+
+
+const Home = ({isArabic}) => {
 
   return (
     <HomeContainer >
       <div className="container">
           <HomeInfo>
-            <HomeTitle>Hatim <span>H</span>.</HomeTitle>
-            {/* <HomeSubTitle>Creative Director</HomeSubTitle> */}
+            <HomeTitle>{isArabic ? data.AR.title : data.EN.title}</HomeTitle>         
             <HomeDesc>
-              Iam a <span>Front-End Developer</span> and Wordpress Designer  
-              creating modern and resposive designs to Web.
+              {isArabic ? data.AR.desc : data.EN.desc}
             </HomeDesc>
-            <HomeBtn>Contact Me</HomeBtn>
+            <HomeBtn to='/contact'>{isArabic ? data.AR.contact : data.EN.contact}</HomeBtn>
           </HomeInfo>
       </div>
     </HomeContainer>
